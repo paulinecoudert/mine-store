@@ -155,8 +155,6 @@ const searchProducts = computed(() =>
 
 /* */
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
-
 body {
   margin: 0;
   padding: 0;
@@ -266,16 +264,5 @@ section {
   position: relative;
   z-index: 2;
   background-color: #fff;
-  color: #262ff;
-  width: 150px;
-  height: 40px;
-  text-align: center;
-  margin: 20px auto 0;
-  line-height: 40px;
-  border-radius: 40px;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 </style>
