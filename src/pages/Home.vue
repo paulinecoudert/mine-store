@@ -32,8 +32,8 @@ const searchProducts = computed(() =>
   <MDBNavbar
     container
     expand="lg"
-    bg="light"
-    class="d-flex justify-content-between"
+    bg=""
+    class="d-flex justify-content-between bg-gradient-to-r from-purple-500 to-pink-500"
   >
     <MDBNavbarBrand class="col-md-4 col-lg-6 ml-6">
       <MDBIcon icon="mdb" iconStyle="fab" size="2x" />
@@ -96,8 +96,6 @@ const searchProducts = computed(() =>
                   alt="Card image cap"
                   lazy-src="https://picsum.photos/1/1"
                 />
-
-                <h2>Basic</h2>
               </div>
               <div class="price">
                 <h4><sup>$</sup>{{ product.price }}</h4>
@@ -135,10 +133,14 @@ const searchProducts = computed(() =>
 <style scoped>
 .product-img {
   transition: all 0.3s ease-in-out;
-  max-width: 180px;
+  /*
   height: 200px;
-  margin: auto;
-  display: block;
+
+  display: block; */
+  max-width: 180px;
+  display: inline-block;
+  padding: 10px;
+  height: 150px;
 }
 
 .product-card:hover .product-img {
@@ -150,7 +152,6 @@ const searchProducts = computed(() =>
 }
 
 .home-container {
-  max-width: 1024px;
 }
 
 /* */
@@ -170,25 +171,22 @@ section {
 
 .card {
   position: relative;
-  min-width: 300px;
+  width: 100%;
   height: auto;
   overflow: hidden;
   border-radius: 15px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   transition: 0.5s;
+  background: linear-gradient(-45deg, rgba(102, 137, 157, 0.34) 0%, #8d9ad7);
 }
 .card:hover {
   transform: scale(1.1);
 }
 .card_red,
 .card-body {
-  background: linear-gradient(
-    -45deg,
-    rgba(36, 255, 114, 0.2377684350107231) 0%,
-    #9a4eff
-  );
+  /* background: linear-gradient(-45deg, rgba(102, 137, 157, 0.34) 0%, #8d9ad7); */
 }
 .card_violet,
 .card_violet .title .fa {
@@ -225,7 +223,7 @@ section {
   position: relative;
   margin: 20px 0 0;
   padding: 0;
-  color: #fff;
+  color: linear-gradient(-45deg, rgba(102, 137, 157, 0.34) 0%, #8d9ad7);
   font-size: 28px;
   z-index: 2;
 }
@@ -237,7 +235,7 @@ section {
   margin: 0;
   padding: 20px 0;
   color: #fff;
-  font-size: 60px;
+  font-size: 40px;
 }
 .option {
   position: relative;
@@ -248,7 +246,7 @@ section {
   padding: 0;
 }
 .option ul li {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
   padding: 0;
   list-style: none;
   color: #fff;
@@ -256,13 +254,13 @@ section {
 }
 
 .title {
-  background: white;
-  border-radius: 20px;
+  width: 100%;
+  background-color: #fff;
 }
 .card a {
   display: block;
   position: relative;
   z-index: 2;
-  background-color: #fff;
+  padding-bottom: 20px;
 }
 </style>

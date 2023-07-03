@@ -59,7 +59,9 @@ const { isFetching, data: product } = useFetch(
   <v-container>
     <v-btn
       class="text-white"
-      style="background: linear-gradient(-45deg, #24ff72, #9a4eff)"
+      style="
+        background: linear-gradient(-45deg, rgba(102, 137, 157, 0.34), #8d9ad7);
+      "
       variant="text"
       @click="$router.back()"
     >
@@ -80,7 +82,7 @@ const { isFetching, data: product } = useFetch(
             <v-btn variant="text">buy now</v-btn>
             <v-btn
               class="text-white"
-              style="background: linear-gradient(-45deg, #24ff72, #9a4eff)"
+              style="background: linear-gradient(-45deg, #66899d57, #8d9ad7)"
             >
               add to cart
             </v-btn>
