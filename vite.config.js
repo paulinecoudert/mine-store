@@ -13,4 +13,5 @@ export default defineConfig({
     devSourcemap: true,
   },
   plugins: [vue(), vuetify({ autoImport: true })],
+  base: "/mineShop-vite",
 });

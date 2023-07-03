@@ -2,11 +2,14 @@
   "name": "shop",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://paulinecoudert.github.io/mineShop-vite",
   "scripts": {
     "serve": "vite preview",
     "build": "vite build",
     "dev": "vite",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
